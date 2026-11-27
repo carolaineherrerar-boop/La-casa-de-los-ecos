@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #050507;
+    color: #f4f1ea;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes subtleFlicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.72;
+  }
+}
+
+.title-flicker {
+  animation: subtleFlicker 6s infinite;
+}
+
+.hazard-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #f5b800,
+    #f5b800 10px,
+    #111114 10px,
+    #111114 20px
+  );
+}
+
+.scanlines-overlay {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 2px,
+    rgba(0, 0, 0, 0.14) 3px,
+    rgba(0, 0, 0, 0.14) 4px
+  );
+}

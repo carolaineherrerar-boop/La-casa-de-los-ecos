@@ -1,0 +1,6 @@
+{
+  "name": "La Casa de los Ecos",
+  "description": "Juego de terror psicológico en primera persona en 3D ambientado en una casa oscura e inquietante.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
